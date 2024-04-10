@@ -1,10 +1,10 @@
 import "dotenv/config";
 import express from "express";
-import PhoneRoutes from "./routes/phones.js";
-import authRoutes from "./routes/auth.js";
+import PhoneRoutes from "./src/routes/phones.js";
+import authRoutes from "./src/routes/auth.js";
 import mongoose from "mongoose";
-import { handleUncaughtErrors } from "./Middlewares/error.js";
-import isAuth from "./Middlewares/auth.js";
+import { handleUncaughtErrors } from "./src/Middlewares/error.js";
+import isAuth from "./src/Middlewares/auth.js";
 
 const app = express();
 

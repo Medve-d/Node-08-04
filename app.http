@@ -7,17 +7,15 @@ GET http://localhost:3001/health
 ###
 
 GET http://localhost:3001/phones
-
+  
 ###
 
 GET http://localhost:3001/error
 
-
-
 ###
 
 GET http://localhost:3001/phones/1
-
+ 
 ### 
 
 POST http://localhost:3001/phones
