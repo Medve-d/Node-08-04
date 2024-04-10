@@ -12,7 +12,7 @@ import { body } from "express-validator";
 const router = express.Router();
 
 // GET http://localhost:3001/cars
-router.get("/", getPhones);
+router.get("/phones", getPhones)
 
 // GET http://localhost:3001/cars/1
 router.get("/:id", getPhone);
@@ -27,12 +27,8 @@ router.post(
   createPhone
 );
 
-// PUT http://localhost:3001/cars/1 creer une route qui
-// permet de modiier une voiture
 router.put("/:id", udpatePhone);
 
-// DELETE http://localhost:3001/cars/1 creer une route qui
-// permet de supprimer une voiture
 router.delete("/:id", deletePhone);
 
 // ERROR

@@ -52,24 +52,24 @@ export const createPhone = (request, response) => {
 export const udpatePhone = (request, response) => {
   const id = parseInt(request.params.id, 10);
   const bodyContent = request.body;
-  const phone = phoneList.find((phone) => phone.id === id);
-  if (phone) {
-    const updatedPhone = { ...phone, ...bodyContent };
-    const index = phoneList.findIndex((phone) => phone.id === id);
+  const Phone = phoneList.find((Phone) => Phone.id === id);
+  if (Phone) {
+    const updatedPhone = { ...Phone, ...bodyContent };
+    const index = phoneList.findIndex((Phone) => Phone.id === id);
     phoneList[index] = updatedPhone;
     response.json(updatedPhone);
   } else {
-    response.status(404).json({ message: "Car not found" });
+    response.status(404).json({ message: "Phone not found" });
   }
 };
 
 export const deletePhone = (request, response) => {
   const id = parseInt(request.params.id, 10);
-  const phone = phoneList.find((phone) => phone.id === id);
-  if (phone) {
-    phoneList = phoneList.filter((phone) => phone.id !== id);
+  const Phone = phoneList.find((Phone) => Phone.id === id);
+  if (Phone) {
+    phoneList = phoneList.filter((Phone) => Phone.id !== id);
     response.status(204).end();
   } else {
-    response.status(404).json({ message: "Car not found" });
+    response.status(404).json({ message: "Phone not found" });
   }
 };

@@ -1,5 +1,5 @@
 import "dotenv/config";
-import mongoose, { mongo } from "mongoose";
+import mongooses from "mongoose";
 import request from "supertest";
 const MONGO_STRING = process.env.MONGO_STRING;
 import { CreateApp } from "../app.js";
