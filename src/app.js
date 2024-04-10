@@ -1,6 +1,6 @@
 import express from "express";
 import { handleUncaughtErrors } from "./Middlewares/error.js";
-import routes from "./routes/index.js";
+import router from "./routes/index.js";
 import multer from "multer";
 import path from "path";
 import * as url from "url";
@@ -39,7 +39,7 @@ export default function CreateApp() {
   console.log("path: ", path.join(__dirname, "images"));
   app.use("/images", express.static(path.join(__dirname, "images")));
 
-  app.use(routes);
+  app.use(router);
 
   app.use(handleUncaughtErrors);
   return app;
