@@ -16,16 +16,16 @@ GET http://localhost:3000/error
 
 ###
 
-GET http://localhost:3001/phones/4
+GET http://localhost:3001/phones/1
 
 ### 
 
-POST http://localhost:3000/phones
+POST http://localhost:3001/phones
 Content-Type: application/json
-
+ 
 {
-    "brand": "F",
-    "model": "K"
+    "brand": "IPHOUNE",
+    "model": "SETPLUS"
 }
 
 ### 

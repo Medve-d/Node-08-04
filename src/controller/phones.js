@@ -1,5 +1,4 @@
-import { phoneList } from "../data/phoneList.js";
-import Phone from "../models/car.js"; // Import the Car model
+import Phone from "../models/phone.js";
 import { validationResult } from "express-validator";
 
 export const getPhones = (req, res) => {

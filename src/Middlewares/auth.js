@@ -3,6 +3,7 @@ import jwt from "jsonwebtoken";
 export default function auth(req, res, next) {
   // recuperer le header authorization
   const header = req.header("Authorization");
+  console.log(header)
   // "Bearer token"
   const array = header.split(" ");
   if (array.length !== 2) {
