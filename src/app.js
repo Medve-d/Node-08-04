@@ -27,7 +27,7 @@ const fileFilter = (req, file, cb) => {
   }
 };
 
-export default function CreateApp() {
+export function CreateApp() {
   const app = express();
 
   app.use(express.json());

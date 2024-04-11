@@ -12,7 +12,7 @@ import { body } from "express-validator";
 const router = express.Router();
 
 // GET http://localhost:3001/cars
-router.get("/phones", getPhones)
+/* router.get("/phones", getPhones)
 
 // GET http://localhost:3001/cars/1
 router.get("/:id", getPhone);
@@ -32,5 +32,5 @@ router.put("/:id", udpatePhone);
 router.delete("/:id", deletePhone);
 
 // ERROR
-router.get("/error", getError);
+router.get("/error", getError); */
 export default router;

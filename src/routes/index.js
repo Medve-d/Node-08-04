@@ -8,7 +8,7 @@ const router = Router();
 
 router.use("/auth", authRouter);
 
-router.use("/phone", PhoneRouter);
+router.use("/phones", PhoneRouter);
 
 router.use("/uploads", fileRouter);
 
