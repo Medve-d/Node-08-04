@@ -7,10 +7,13 @@ const MONGO_STRING = process.env.MONGO_STRING;
 
 const app = CreateApp();
 
+//Connecter la base de données 
+
 mongoose.connect(MONGO_STRING).then(() => {
   console.log("Connected to the database!");
 
-  // On lance le serveur
+
+  // Démarrage serveur
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
   });

@@ -9,15 +9,15 @@ import {
 } from "../controller/phones.js";
 import { body } from "express-validator";
 
-const router = express.Router();
+export const router = express.Router();
 
-// GET http://localhost:3001/cars
-/* router.get("/phones", getPhones)
+// GET http://localhost:3001/phones
+router.get("/", getPhones)
 
-// GET http://localhost:3001/cars/1
+// GET http://localhost:3001/phones/:id
 router.get("/:id", getPhone);
 
-// POST http://localhost:3001/cars
+// POST http://localhost:3001/phones
 router.post(
   "/",
   [
@@ -31,6 +31,6 @@ router.put("/:id", udpatePhone);
 
 router.delete("/:id", deletePhone);
 
-// ERROR
-router.get("/error", getError); */
+// Pour erreur
+router.get("/error", getError); 
 export default router;

@@ -34,10 +34,10 @@ export const createPhone = (request, response) => {
   const bodyContent = request.body;
   const errors = validationResult(request);
   console.log(errors);
-  // on cree un nouvelle instance de Car
+  // on cree un nouvelle instance de Phone
   const newPhone = new Phone(bodyContent);
 
-  // on sauvegarde la nouvelle instance de Car
+  // on sauvegarde la nouvelle instance de Phone
   newPhone
     .save()
     .then((result) => {
@@ -50,7 +50,7 @@ export const createPhone = (request, response) => {
 };
 
 export const udpatePhone = (request, response) => {
-  const id = parseInt(request.params.id, 10);
+  const id = parseInt(request.params.id, 6);
   const bodyContent = request.body;
   const Phone = phoneList.find((Phone) => Phone.id === id);
   if (Phone) {
